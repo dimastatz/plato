@@ -1,6 +1,6 @@
 <table width="128px">
   <tr>
-    <td><img src="./images/plato.jpeg"/></td>
+    <td><img src="./images/plato_1.png"/></td>
   </tr>
 </table>
 
