@@ -10,35 +10,20 @@ Empower young minds with our cutting-edge generative AI service, offering step-b
 <kbd>
 <img src="./images/plato_1.png"> 
 </kbd>
-<!--
+
 <kbd>
-<img src="https://static.wixstatic.com/media/268424_3cc49b21872a41d799b1efa55b11bd37~mv2.gif"> 
-</kbd> -->
+<img src="./images/example.gif"> 
+</kbd>
 </div>
 
 
 ## Background
 Empower young minds with our cutting-edge generative AI service, offering step-by-step solutions to math and logic puzzles. From basic arithmetic to complex problem-solving, [Plato](https://github.com/dimastatz/plato) provides kids with personalized guidance, sparking curiosity and fostering a love for learning. Watch them excel, one solution at a time! 
 
-## How it works
-[TBD]
 
 ## 🔍 A glance of {TBD}
 
-```mermaid
-graph LR
-A-. CDC Events .->  D
-A[(Database)] --> B((Data Layer))
-B --> C
-C{WEB API} -->D
-D[(Redis Cache)] --REST--> E[Fronetnd App] 
-```
+
+## ❓ FAQ
 
 
-```mermaid
-graph LR
-A[(MySql)]-. ETL .-> B[(Snowflake)]
-C[(MongoDB)]-. ETL .-> B[(Snowflake)]
-B-.-> D[(Elastic Search)] 
-D -- REST --> E[Analytics Dashboard]
-```
