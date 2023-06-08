@@ -1,4 +1,4 @@
-<table width="64px">
+<table width="48px" style="float: left;">
   <tr>
     <td><img src="./images/plato_1.png"/></td>
   </tr>
