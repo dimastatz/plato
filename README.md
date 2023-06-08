@@ -10,10 +10,6 @@ Empower young minds with our cutting-edge generative AI service, offering step-b
 <kbd>
 <img src="./images/plato_1.png"> 
 </kbd>
-
-<kbd>
-<img src="./images/example.gif"> 
-</kbd>
 </div>
 
 
