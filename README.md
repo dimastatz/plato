@@ -22,3 +22,23 @@ Empower young minds with our cutting-edge generative AI service, offering step-b
 
 ## How it works
 [TBD]
+
+## 🔍 A glance of {TBD}
+
+```mermaid
+graph LR
+A-. CDC Events .->  D
+A[(Database)] --> B((Data Layer))
+B --> C
+C{WEB API} -->D
+D[(Redis Cache)] --REST--> E[Fronetnd App] 
+```
+
+
+```mermaid
+graph LR
+A[(MySql)]-. ETL .-> B[(Snowflake)]
+C[(MongoDB)]-. ETL .-> B[(Snowflake)]
+B-.-> D[(Elastic Search)] 
+D -- REST --> E[Analytics Dashboard]
+```
