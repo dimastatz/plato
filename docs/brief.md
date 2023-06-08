@@ -8,11 +8,11 @@ June 2023
 Our company is dedicated to revolutionizing elementary education by developing an innovative AI Tutor specifically designed to enhance learning experiences for young students. By leveraging the power of artificial intelligence, we aim to provide personalized and interactive educational support, catering to the unique needs of each child. Our AI Tutor will serve as a virtual companion, delivering engaging lessons, step-by-step explanations, and real-time feedback, ultimately fostering a love for learning and boosting academic success.
 
 
-### Market
+## Market
 The education system in Israel consists of three tiers: primary education (grades 1–6, approximately ages 6–12), middle school (grades 7–9, approximately ages 12–15) and high school (grades 10–12, approximately ages 15–19). Our primary target market comprises children in primary education, resulting in a market size of over 800,000 in Israel alone. Furthermore, the cost of replicating this system in other countries is minimal. 
 
 
-### 2. Customers
+## Customers
 Cloud adoption is still growing, and the vast majority of enterprise organizations and more than 50% of SMBs spend more than [a million dollars](https://www.flexera.com/blog/cloud/cloud-computing-trends-2022-state-of-the-cloud-report/#:~:text=Public%20cloud%20continues%20to%20accelerate&text=Thirty%2Dseven%20percent%20of%20enterprises,exceeds%20%241.2%20million%20per%20year.) a year on cloud computing.
 
 ## Problem Statement
