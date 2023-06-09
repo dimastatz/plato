@@ -21,10 +21,10 @@ Empower young minds with our cutting-edge generative AI service, offering step-b
 ```mermaid
 sequenceDiagram
 Pupil->>Plato Agent: Explain me how to solve 2*7-4/2?
-Note right of Plato Agent: Rational thoughts!
-Plato Agent-->>Plato Server: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
+Note right of Plato Agent: Is request valid!
+Plato Agent-->>Plato Server: Explain me how to solve 2*7-4/2?
+Plato Server-->>Plato Index DB: Is it know question?
+Plato Index DB-->>Plato Server: Return answer if the question is known!
 ```
 
 
