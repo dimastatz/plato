@@ -4,9 +4,11 @@
 <img src="https://img.shields.io/badge/Progress-1%25-red"> <img src="https://img.shields.io/badge/Feedback-Welcome-green">
 </br>
 <kbd>
-<img src="../images/plato_1.png" width="128ppx"> 
+<img src="../images/plato_1.png" width="256ppx"> 
 </kbd>
 </div>
+</br>
+</br>
 
 # System Design Document
 June 2023
