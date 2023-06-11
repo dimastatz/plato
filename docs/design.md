@@ -20,21 +20,24 @@ The purpose of this requirements document is to outline the key features, functi
 
 ### Functional Requirements
 
-- 1. Actor Admin/Teacher
+#### Actors and Actions
+1. Admin/Teacher
     - Login
     - Scan and upload workbooks
     - View Analytics
 
-- 2. Actor Student
+2. Student
     - Login
     - Ask a question using voice command or text
     - Choose a question from a pre-existing database of workbooks
     - Solve questions
     - Request a step-by-step solution even when the provided solution is incorrect. 
 
-- 3. Actor Student
+3. Actor Parent
+    - Login
+    - View Analytics
 
-
+#### Flows
 
 
 
