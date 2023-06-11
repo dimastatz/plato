@@ -28,7 +28,7 @@ The purpose of this requirements document is to outline the key features, functi
 
 2. Student
     - Login
-    - Ask a question
+    - Ask a question using voice / text commands
     - Choose a question from a pre-existing database of workbooks
     - Solve questions
     - Request a step-by-step solution even when the provided solution is incorrect. 
@@ -36,6 +36,8 @@ The purpose of this requirements document is to outline the key features, functi
 3. AI Tutor
     - Answer question by using internal knowledge DB
     - Answer question by using the ChatGPT prompting
+    - Show answers in text
+    - Play aloud answers
 
 
 #### Flows
