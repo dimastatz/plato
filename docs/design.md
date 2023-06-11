@@ -21,26 +21,25 @@ The purpose of this requirements document is to outline the key features, functi
 ### Functional Requirements
 
 #### Actors and Actions
-1. Admin/Teacher
+1. Admin/Teacher/Parent
     - Login
     - Scan and upload workbooks
     - View Analytics
 
 2. Student
     - Login
-    - Ask a question using voice command or text
+    - Ask a question
     - Choose a question from a pre-existing database of workbooks
     - Solve questions
     - Request a step-by-step solution even when the provided solution is incorrect. 
 
-3. Actor Parent
-    - Login
-    - View Analytics
+3. AI Tutor
+    - Answer question by using internal knowledge DB
+    - Answer question by using the ChatGPT prompting
+
 
 #### Flows
-
-
-
+[TBD]()
 
 
 ### Non-Functional Requirements
