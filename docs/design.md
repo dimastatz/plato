@@ -14,14 +14,33 @@
 June 2023
 
 ## Background
-Briefly describe the System. What business or technical problem does it solve. Describe it by its similarity to other well-known systems or subjects. 
+The purpose of this requirements document is to outline the key features, functionalities, and performance expectations for an AI Tutor system Plato targeting elementary school kids. Plato aims to provide an interactive and personalized learning experience, fostering academic growth and engagement.
 
 ## Requirements
 
-### Functional 
-Define use cases and actors of the System. Who are the Actors? How do they interact with the System or probably with each other? It is the right place to ask questions to clarify the functionality. 
+### Functional Requirements
 
-### Non-Functional
+- 1. Actor Admin/Teacher
+    - Login
+    - Scan and upload workbooks
+    - View Analytics
+
+- 2. Actor Student
+    - Login
+    - Ask a question using voice command or text
+    - Choose a question from a pre-existing database of workbooks
+    - Solve questions
+    - Request a step-by-step solution even when the provided solution is incorrect. 
+
+- 3. Actor Student
+
+
+
+
+
+
+
+### Non-Functional Requirements
 Address the following aspects of System Design
 - Security
 - Efficiency
