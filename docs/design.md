@@ -33,16 +33,23 @@ The purpose of this requirements document is to outline the key features, functi
     - Solve questions
     - Request a step-by-step solution even when the provided solution is incorrect. 
 
-3. AI Tutor
+3. AI Tutor aka Plato
     - Answer question by using internal knowledge DB
     - Answer question by using the ChatGPT prompting
     - Show answers in text
     - Play aloud answers
 
-
 #### Flows
-[TBD]()
-
+1. Upload Workbook
+```mermaid
+sequenceDiagram
+Admin->>Plato: Login
+Note right of Plato: Login by using Gmail, Facebook, etc 
+Plato-->>Admin: access token
+Admin->>Plato: upload workbook image or text
+Plato->>Plato: if workbook is image, activate OCR to get text
+Plato-->>Admin: Upload Status
+```
 
 ### Non-Functional Requirements
 Address the following aspects of System Design
