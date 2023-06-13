@@ -82,6 +82,8 @@ Plato->>PlatoKnowledgeDB: 7. store the answer
 PlatoKnowledgeDB-->>Plato: knowledge db update status
 
 Plato->>Plato: 8. validate student's answer
+Note right of Plato: Should we implement voice answering?
+
 Plato-->>Student: send the right answer with explanation
 ```
 
