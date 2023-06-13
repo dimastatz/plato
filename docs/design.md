@@ -51,6 +51,9 @@ Plato->>Plato: 3. if workbook is image, activate OCR to get text
 Plato-->Plato: 4. for each workbook page, it an exercise contains image, transform image to text 
 Plato-->>Admin: upload Status
 ```
+##### Question
+- <i>Some assignments contain image as part of an assignment description. How we translate an image to text. Can chatGPT explain images. Is it an idea for the product?</i>
+
 
 2. Solve Exercise from Stock
 ```mermaid
