@@ -61,13 +61,13 @@ sequenceDiagram
 
 Student->>Plato: 1. login
 Note right of Plato: login by using Gmail, Facebook, etc 
-Plato-->Student: access token
+Plato-->>Student: access token
 
 Student->>Plato: 2. select workbook from the stock and select the exercise page
-Plato-->Student: digital workbook as html page 
+Plato-->>Student: digital workbook as html page 
 
 Student->>Plato: 3. solve an exercise from the selected workbook and press validate button
-Plato-->PlatoKnowledgeDB: 4. check if answer exist
+Plato->>PlatoKnowledgeDB: 4. check if answer exist
 PlatoKnowledgeDB->>Plato: return the right answer or answer is not exist
 Plato->>ChatGPT: 5. if answer is not exists, solve the problem with step by step explanation 
 ChatGPT-->Plato: answer with explanation
