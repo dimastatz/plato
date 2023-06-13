@@ -62,12 +62,12 @@ Student->>Plato: 2. select workbook from the stock and select the exercise page
 Student->>Plato: 3. solve an exercise from the selected workbook and press validate button
 Plato-->PlatoKnowledgeDB: 4. check if answer exist
 PlatoKnowledgeDB->>Plato: return the right answer or answer is not exist
-Plato-->ChatGPT: 5. if answer is not exists, solve the problem with step by step explanation 
-ChatGPT->>Plato: answer with explanation
-Plato->>Plato: 6: translate the answer to the target language
-Plato-->PlatoKnowledgeDB: 7. store the answer
-Plato-->Plato: 7. validate student's answer
-Plato->>Student: send the wright answer with explanation
+Plato->>ChatGPT: 5. if answer is not exists, solve the problem with step by step explanation 
+ChatGPT-->Plato: answer with explanation
+Plato->>Plato: 6. translate the answer to the target language
+Plato->>PlatoKnowledgeDB: 7. store the answer
+Plato->>Plato: 7. validate student's answer
+Plato-->Student: send the wright answer with explanation
 ```
 
 ### Non-Functional Requirements
