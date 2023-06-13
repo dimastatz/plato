@@ -47,7 +47,7 @@ Admin->>Plato: 1. login
 Note right of Plato: login by using Gmail, Facebook, etc 
 Plato-->>Admin: access token
 Admin->>Plato: 2. upload workbook image or text
-Plato->>Plato: 3. if workbook is image, activate OCR to get text
+Plato-->Plato: 3. if workbook is image, activate OCR to get text
 Plato-->Plato: 4. for each workbook page, it an exercise contains image, transform image to text 
 Plato-->>Admin: upload Status
 ```
@@ -58,10 +58,14 @@ Plato-->>Admin: upload Status
 2. Solve Exercise from Stock
 ```mermaid
 sequenceDiagram
+
 Student->>Plato: 1. login
 Note right of Plato: login by using Gmail, Facebook, etc 
-Plato-->>Student: access token
+Plato-->Student: access token
+
 Student->>Plato: 2. select workbook from the stock and select the exercise page
+Plato-->Student: digital workbook as html page 
+
 Student->>Plato: 3. solve an exercise from the selected workbook and press validate button
 Plato-->PlatoKnowledgeDB: 4. check if answer exist
 PlatoKnowledgeDB->>Plato: return the right answer or answer is not exist
