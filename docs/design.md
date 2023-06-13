@@ -47,8 +47,8 @@ Admin->>Plato: 1. login
 Note right of Plato: login by using Gmail, Facebook, etc 
 Plato-->>Admin: access token
 Admin->>Plato: 2. upload workbook image or text
-Plato-->Plato: 3. if workbook is image, activate OCR to get text
-Plato-->Plato: 4. for each workbook page, it an exercise contains image, transform image to text 
+Plato->>Plato: 3. if workbook is image, activate OCR to get text
+Plato->>Plato: 4. for each workbook page, it an exercise contains image, transform image to text 
 Plato-->>Admin: upload Status
 ```
 ##### Question
