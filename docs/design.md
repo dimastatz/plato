@@ -50,7 +50,9 @@ Plato-->>Admin: access token
 Admin->>Plato: 2. upload workbook image or text
 
 Plato->>Plato: 3. if workbook is image, activate OCR to get text
-Note right of Plato: Some assignments contain image as part of an assignment description. How we translate an image to text. Can chatGPT explain images. Is it an idea for the product?
+Note right of Plato: Some assignments contain image as part of an assignment description.
+Note right of Plato: Should we use ChatGPT to explain images and add it to the assignment?
+Note right of Plato: Is ChatGPT good enough understanding images?
 
 Plato->>Plato: 4. for each workbook page, it an exercise contains image, transform image to text 
 Plato-->>Admin: upload Status
