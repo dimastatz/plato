@@ -43,12 +43,31 @@ The purpose of this requirements document is to outline the key features, functi
 1. Upload Workbook
 ```mermaid
 sequenceDiagram
-Admin->>Plato: Login
-Note right of Plato: Login by using Gmail, Facebook, etc 
+Admin->>Plato: 1. login
+Note right of Plato: login by using Gmail, Facebook, etc 
 Plato-->>Admin: access token
-Admin->>Plato: upload workbook image or text
-Plato->>Plato: if workbook is image, activate OCR to get text
-Plato-->>Admin: Upload Status
+Admin->>Plato: 2. upload workbook image or text
+Plato->>Plato: 3. if workbook is image, activate OCR to get text
+Plato-->Plato: 4. for each workbook page, it an exercise contains image, transform image to text 
+Plato-->>Admin: upload Status
+```
+
+2. Solve Exercise from Stock
+```mermaid
+sequenceDiagram
+Student->>Plato: 1. login
+Note right of Plato: login by using Gmail, Facebook, etc 
+Plato-->>Student: access token
+Student->>Plato: 2. select workbook from the stock and select the exercise page
+Student->>Plato: 3. solve an exercise from the selected workbook and press validate button
+Plato-->PlatoKnowledgeDB: 4. check if answer exist
+PlatoKnowledgeDB->>Plato: return the right answer or answer is not exist
+Plato-->ChatGPT: 5. if answer is not exists, solve the problem with step by step explanation 
+ChatGPT->>Plato: answer with explanation
+Plato->>Plato: 6: translate the answer to the target language
+Plato-->PlatoKnowledgeDB: 7. store the answer
+Plato-->Plato: 7. validate student's answer
+Plato->>Student: send the wright answer with explanation
 ```
 
 ### Non-Functional Requirements
