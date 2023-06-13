@@ -76,8 +76,10 @@ ChatGPT-->>Plato: answer with explanation
 
 Plato->>Plato: 6. translate the answer to the target language
 Plato->>PlatoKnowledgeDB: 7. store the answer
-Plato->>Plato: 7. validate student's answer
-Plato-->>Student: send the wright answer with explanation
+PlatoKnowledgeDB-->>Plato: knowledge db update status
+
+Plato->>Plato: 8. validate student's answer
+Plato-->>Student: send the right answer with explanation
 ```
 
 ### Non-Functional Requirements
