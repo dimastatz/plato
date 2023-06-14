@@ -87,7 +87,7 @@ Note right of Plato: Should we implement voice answering?
 Plato-->>Student: send the right answer with explanation
 ```
 
-3. Perform Analytics
+3. View Analytics
 [TBD]
 
 
