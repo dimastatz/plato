@@ -98,7 +98,6 @@ Admin-->Student: .
 
 Admin->>Plato: 1. Upload one workbook
 Note right of Plato: A workbook uploaded and processed manually
-Plato-->>Admin: Return Status
 
 Student->>Plato: 2. Connect to Plato WhatsApp channel
 Plato-->>Student: Send greeting Message 
@@ -110,6 +109,20 @@ Plato-->>Student: Send response
 Note right of Student: You selected class A
 Note right of Student: Please select workbook from workbooks X,Y,Z
 
+Student->>Plato: 4. Select the workbook
+Plato-->>Student: Send response 
+Note right of Student: You selected the workbook X
+Note right of Student: Please select page number
+
+Student->>Plato: 5. Select the page
+Plato-->>Student: Type "Yes" to solve next or "No" to the main menu 
+Note right of Student: You selected class A, workbook X, page 11
+Note right of Student: Solving exercise 1: x*2 + 4 = 10
+Note right of Student: Step 1, get rid of the constant term 4: x*2 + 4 - 4 = 10 - 4
+Note right of Student: Step 2, simplifying, we have: x*2 = 6
+Note right of Student: Step 3, isolate x by getting rid of 2: (x*2)/2 = 6/2
+Note right of Student: Step 4, simplifying, we have: x = 3.
+Note right of Student: So, the solution to the equation x*2 + 4 = 10 is x = 3.
 ```
 
 ### Non-Functional Requirements
