@@ -95,6 +95,7 @@ The following flow is an MVP flow that validates the idea, reduces risk, gathers
 ```mermaid
 sequenceDiagram
 Admin->>Plato: 1. Upload one workbook
+Plato-->>: Return Status
 Note right of Plato: An Workbook uploaded and processed manually
 
 Student->>Plato: 2. Connect to Plato WhatsApp channel
