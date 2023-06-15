@@ -92,17 +92,21 @@ Plato-->>Student: send the correct answer with an explanation
 
 #### MVP Flow
 The following flow is an MVP flow that validates the idea, reduces risk, gathers user feedback, and iterates based on real-world insights. MVP Flow provides a solid foundation for developing a successful and market-aligned system while optimizing development time and resources. And MVP flow is a chatbot that can be accessed by anyone running WhatsApp on their phone.
-
 ```mermaid
 sequenceDiagram
+Admin->>Plato: 1. login
+Note right of Plato: login by using Gmail, Facebook, etc 
+Plato-->>Admin: access token
 
-Admin->>Plato: 1. Upload one workbook
-Note right of Plato: the workbook is scanned and processed manually
+Admin->>Plato: 2. upload workbook image or text
 
-Student->>Plato 2. Open WhatsApp Plato channel
-Note right of Plato: Open WhatsApp and navigate to Plato
-Plato-->>Student: Send response message
-Note right of Plato: "Hello I am Plato, a chatbot solving math problems"
+Plato->>Plato: 3. if the workbook is an image, activate OCR to get text
+Note right of Plato: Some assignments contain images as part of an assignment description.
+Note right of Plato: Should we use ChatGPT to explain images and add them to the assignment?
+Note right of Plato: Is ChatGPT good enough to understand images?
+
+Plato->>Plato: 4. for each workbook page, an exercise containing an image, transform image to text 
+Plato-->>Admin: upload Status
 ```
 
 ### Non-Functional Requirements
