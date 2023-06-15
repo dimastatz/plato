@@ -97,7 +97,7 @@ sequenceDiagram
 Admin-->Student: .
 
 Admin->>Plato: 1. Upload one workbook
-Note right of Admin: An Workbook uploaded and processed manually
+Note right of Plato: A workbook uploaded and processed manually
 Plato-->>Admin: Return Status
 
 Student->>Plato: 2. Connect to Plato WhatsApp channel
