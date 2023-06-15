@@ -94,6 +94,11 @@ Plato-->>Student: send the correct answer with an explanation
 The following flow is an MVP flow that validates the idea, reduces risk, gathers user feedback, and iterates based on real-world insights. MVP Flow provides a solid foundation for developing a successful and market-aligned system while optimizing development time and resources. And MVP flow is a chatbot that can be accessed by anyone running WhatsApp on their phone.
 ```mermaid
 sequenceDiagram
+Admin
+Student
+Plato
+
+
 Admin->>Plato: 1. Upload one workbook
 Plato-->>Admin: Return Status
 Note right of Plato: An Workbook uploaded and processed manually
