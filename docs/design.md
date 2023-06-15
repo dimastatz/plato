@@ -14,7 +14,7 @@
 June 2023
 
 ## Background
-The purpose of this requirements document is to outline the key features, functionalities, and performance expectations for an AI Tutor system Plato targeting elementary school kids. Plato aims to provide an interactive and personalized learning experience, fostering academic growth and engagement.
+This requirements document outlines the key features, functionalities, and performance expectations for an AI Tutor system Plato targeting elementary school kids. Plato aims to provide an interactive, personalized learning experience, fostering academic growth and engagement.
 
 ## Requirements
 
@@ -28,16 +28,16 @@ The purpose of this requirements document is to outline the key features, functi
 
 2. Student
     - Login
-    - Ask a question using voice / text commands
+    - Ask a question using voice/text commands
     - Choose a question from a pre-existing database of workbooks
     - Solve questions
     - Request a step-by-step solution even when the provided solution is incorrect. 
 
 3. AI Tutor aka Plato
-    - Answer question by using internal knowledge DB
-    - Answer question by using the ChatGPT prompting
+    - Answer questions by using internal knowledge DB
+    - Answer questions by using the ChatGPT prompting
     - Show answers in text
-    - Play aloud answers
+    - Play-aloud answers
 
 #### Flows
 1. Upload Workbook
@@ -49,12 +49,12 @@ Plato-->>Admin: access token
 
 Admin->>Plato: 2. upload workbook image or text
 
-Plato->>Plato: 3. if workbook is image, activate OCR to get text
-Note right of Plato: Some assignments contain image as part of an assignment description.
-Note right of Plato: Should we use ChatGPT to explain images and add it to the assignment?
-Note right of Plato: Is ChatGPT good enough understanding images?
+Plato->>Plato: 3. if the workbook is an image, activate OCR to get text
+Note right of Plato: Some assignments contain images as part of an assignment description.
+Note right of Plato: Should we use ChatGPT to explain images and add them to the assignment?
+Note right of Plato: Is ChatGPT good enough to understand images?
 
-Plato->>Plato: 4. for each workbook page, it an exercise contains image, transform image to text 
+Plato->>Plato: 4. for each workbook page, an exercise containing an image, transform image to text 
 Plato-->>Admin: upload Status
 ```
 
@@ -66,25 +66,25 @@ Student->>Plato: 1. login
 Note right of Plato: login by using Gmail, Facebook, etc 
 Plato-->>Student: access token
 
-Student->>Plato: 2. select workbook from the stock and select the exercise page
-Plato-->>Student: digital workbook as html page 
+Student->>Plato: 2. select the workbook from the stock and select the exercise page
+Plato-->>Student: digital workbook as HTML page 
 
 Student->>Plato: 3. solve an exercise from the selected workbook and press validate button
 
-Plato->>PlatoKnowledgeDB: 4. check if answer exist
+Plato->>PlatoKnowledgeDB: 4. check if the answer exist
 PlatoKnowledgeDB-->>Plato: return the right answer or answer is not exist
 
-Plato->>ChatGPT: 5. if answer is not exists, solve the problem with step by step explanation 
-ChatGPT-->>Plato: answer with explanation
+Plato->>ChatGPT: 5. if the answer does not exist, solve the problem with step by step explanation 
+ChatGPT-->>Plato: answer with an explanation
 
 Plato->>Plato: 6. translate the answer to the target language
 Plato->>PlatoKnowledgeDB: 7. store the answer
 PlatoKnowledgeDB-->>Plato: knowledge db update status
 
-Plato->>Plato: 8. validate student's answer
+Plato->>Plato: 8. validate the student's answer
 Note right of Plato: Should we implement voice answering?
 
-Plato-->>Student: send the right answer with explanation
+Plato-->>Student: send the correct answer with an explanation
 ```
 
 3. View Analytics
