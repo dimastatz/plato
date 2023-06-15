@@ -100,14 +100,14 @@ Admin->>Plato: 1. Upload one workbook
 Note right of Plato: A workbook uploaded and processed manually
 
 Student->>Plato: 2. Connect to Plato WhatsApp channel
+Note right of Student: Hello I am Plato. I am solving math problems ...
+Note right of Student: Please select your class (A,B,C ?)
 Plato-->>Student: Send greeting Message 
-Note right of Plato: Hello I am Plato. I am solving math problems ...
-Note right of Plato: Please select your class (A,B,C ?)
 
 Student->>Plato: 3. Select the class
-Plato-->>Student: Send response 
 Note right of Student: You selected class A
 Note right of Student: Please select workbook from workbooks X,Y,Z
+Plato-->>Student: Send response 
 
 Student->>Plato: 4. Select the workbook
 Note right of Student: You selected the workbook X
