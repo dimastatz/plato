@@ -90,6 +90,24 @@ Plato-->>Student: send the correct answer with an explanation
 3. View Analytics
 [TBD]
 
+#### MVP Flow
+The following flow is an MVP flow that validates the idea, reduces risk, gathers user feedback, and iterates based on real-world insights. MVP Flow provides a solid foundation for developing a successful and market-aligned system while optimizing development time and resources. And MVP flow is a chatbot that can be accessed by anyone running WhatsApp on their phone.
+```mermaid
+sequenceDiagram
+
+Admin->>Plato: 1. Upload one workbook
+Note right of Plato: the workbook is scanned and processed manually
+
+Student->>Plato 2. Open WhatsApp Plato channel
+Note right of Plato: Open WhatsApp and navigate to Plato
+Plato-->>Student: Send response message
+Note right of Plato: "Hello I am Plato, a chat bot solving math problems"
+
+```
+
+
+
+
 
 ### Non-Functional Requirements
 Address the following aspects of System Design
