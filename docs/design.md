@@ -97,8 +97,8 @@ sequenceDiagram
 Admin-->Student: .
 
 Admin->>Plato: 1. Upload one workbook
+Note right of Admin: An Workbook uploaded and processed manually
 Plato-->>Admin: Return Status
-Note right of Plato: An Workbook uploaded and processed manually
 
 Student->>Plato: 2. Connect to Plato WhatsApp channel
 Plato-->>Student: Send greeting Message 
@@ -109,8 +109,6 @@ Student->>Plato: 3. Select the class
 Plato-->>Student: Send response 
 Note right of Student: You selected class A
 Note right of Student: Please select workbook from workbooks X,Y,Z
-
-
 
 ```
 
