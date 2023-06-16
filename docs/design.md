@@ -160,10 +160,10 @@ journey
       CI/CD pipeline: 5: Dima, Yuri
       Test Hello World: 5: Dima, Yuri
     section Milestone 2 - Basic Logic
-      Process Workbook: 10: Dima
+      Process Workbook: 5: Dima
       Implement Solution Flow: 10: Yuri
-    section Milestone 3 - Users Feedback
-      Process Workbook: 10: Dima, Yuri
+    section Milestone  - Users Feedback
+      Process Workbook: 2: Dima, Yuri
 ```
 
 
