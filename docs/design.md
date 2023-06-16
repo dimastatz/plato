@@ -99,6 +99,7 @@ Admin-->Student: .
 
 Admin->>Plato: 1. Upload one workbook
 Note left of Plato: A workbook uploaded and processed (manually as an option)
+Plato-->>Admin: Return status
 
 Student->>Plato: 2. Connect to Plato WhatsApp channel
 Note right of Student: Hello I am Plato. I am solving math problems ...
