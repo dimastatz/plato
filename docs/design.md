@@ -151,6 +151,19 @@ Low-Level design of each component (OOD can help)
 - Performance Efficiency
 - Operation Excellence
 
+## Appendix 1 - MVP Milestones
+```mermaid
+gantt
+    title Git Issues - days since last update
+    dateFormat  X
+    axisFormat %s
+
+    section Issue19062
+    15   : 0, 15
+    section Issue19401
+    30   : 10, 30
+```
+
 
 
 
