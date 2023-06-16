@@ -91,7 +91,7 @@ Plato-->>Student: send the correct answer with an explanation
 [TBD]
 
 #### MVP Flow
-Plato MVP flow is a limited-functionality WhatsApp chatbot for the Plato Service. Developing an MVP enables testing and validating the core concept, taking an iterative approach, and refining the tutor based on user feedback.
+Plato MVP flow is a limited-functionality WhatsApp chatbot for the Plato Service. Developing an MVP enables testing and validating the core concept, taking an iterative approach, and refining the Plato functionality based on user feedback.
 
 ```mermaid
 sequenceDiagram
