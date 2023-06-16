@@ -163,9 +163,9 @@ journey
       Process Workbook: 0: ?
       Implement Chat Flow: 0: ?
       Rollout to Customers: 0: Yuri, Dima
-    section Milestone  - Feedback Analysis
+    section Milestone 3 - Feedback Analysis
       Collect Customers Feedback: 0: Yuri, Dima
-      Redesign Solution: 0, Yuri, Dima
+      Redesign Solution: 0: Yuri, Dima
 ```
 
 
