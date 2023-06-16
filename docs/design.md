@@ -156,14 +156,16 @@ Low-Level design of each component (OOD can help)
 journey
     title MVP Milestones
     section Milestone 1 - Kickoff
-      Bot Skeleton: 5: Dima, Yuri
-      CI/CD pipeline: 5: Dima, Yuri
-      Test Hello World: 5: Dima, Yuri
-    section Milestone 2 - Basic Logic
-      Process Workbook: 5: Dima
-      Implement Solution Flow: 10: Yuri
-    section Milestone  - Users Feedback
-      Process Workbook: 2: Dima, Yuri
+      Design MVP : 7: Yuri, Dima
+      Bot Skeleton: 0: ?
+      CI/CD pipeline: 0: ?
+    section Milestone 2 - Build
+      Process Workbook: 0: ?
+      Implement Chat Flow: 0: ?
+      Rollout to Customers: 0: Yuri, Dima
+    section Milestone  - Feedback Analysis
+      Collect Customers Feedback: 0: Yuri, Dima
+      Redesign Solution: 0, Yuri, Dima
 ```
 
 
