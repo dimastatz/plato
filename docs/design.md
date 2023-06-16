@@ -154,14 +154,14 @@ Low-Level design of each component (OOD can help)
 ## Appendix 1 - MVP Milestones
 ```mermaid
 gantt
-    title Git Issues - days since last update
+    title Plato MVP Milestones
     dateFormat  X
     axisFormat %s
 
-    section Issue19062
-    15   : 0, 15
-    section Issue19401
-    30   : 10, 30
+    section Develop WhatsApp bot skeleton
+    10   : 0, 10
+    section Develop CI/CD for MVP code
+    10   : 0, 10
 ```
 
 
