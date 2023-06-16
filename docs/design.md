@@ -153,15 +153,17 @@ Low-Level design of each component (OOD can help)
 
 ## Appendix 1 - MVP Milestones
 ```mermaid
-gantt
-    title Plato MVP Milestones
-    dateFormat  X
-    axisFormat %s
-
-    section Develop WhatsApp bot skeleton
-    10   : 0, 10
-    section Develop CI/CD for MVP code
-    10   : 0, 10
+journey
+    title MVP Milestones
+    section Milestone 1 - Kickoff
+      Bot Skeleton: 5: Dima, Yuri
+      CI/CD pipeline: 5: Dima, Yuri
+      Test Hello World: 5: Dima, Yuri
+    section Milestone 2 - Basic Logic
+      Process Workbook: 10: Dima
+      Implement Solution Flow: 10: Yuri
+    section Milestone 3 - Users Feedback
+      Process Workbook: 10: Dima, Yuri
 ```
 
 
