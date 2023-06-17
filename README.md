@@ -8,7 +8,7 @@ Empower young minds with our cutting-edge generative AI service, offering step-b
 </br>
 </br>
 <kbd>
-<img src="./images/plato_1.png"> 
+<img src="./docs/images/plato_1.png"> 
 </kbd>
 </div>
 
