@@ -1,12 +1,11 @@
 import pytest
-from plato.plato_facade import upload_workbook
-
-
-def test_always_passes():
-    assert True
+import plato.plato_facade as pf
 
 
 def test_upload_workbook():
     body = b''
-    assert upload_workbook(body) == 0
+    assert pf.upload_workbook(body) == 0
 
+
+def test_send_message():
+    assert pf.send_message('') == ''
