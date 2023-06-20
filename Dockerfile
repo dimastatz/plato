@@ -8,5 +8,9 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 COPY . .
 
+RUN black plato
+RUN pylint --fail-under=10.0 plato
+RUN pytest -v plato
+
 ENTRYPOINT ["python3"]
 CMD ["./plato/app.py" ]

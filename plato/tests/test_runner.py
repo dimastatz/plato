@@ -1,4 +1,5 @@
-"""test basic smarti logic facade"""
+"""test logic"""
+
 
 import plato.plato_facade as pf
 
