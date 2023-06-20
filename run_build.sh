@@ -6,6 +6,12 @@ if [ "$#" -eq 0 ]; then
     2. '-docker' to build and run docker container"
 elif [ $1 = "-local" ]; then
     echo "Running format, linter and tests"
+    rm -rf .venv
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install --upgrade pip
+    pip install -r ./requirements.txt
+
     black plato
     pylint plato
     pytest plato
