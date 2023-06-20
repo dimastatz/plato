@@ -1,14 +1,11 @@
-"""
-"""
+"""smarti facade aka API"""
 
 
 def upload_workbook(stream: bytes) -> int:
-    return 0
-
-
-"""
-"""
+    """upload scanned workbook"""
+    return len(stream)
 
 
 def send_message(message: str) -> str:
-    return ""
+    """sends messages to AI bot"""
+    return message

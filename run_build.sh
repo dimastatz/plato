@@ -3,7 +3,8 @@
 if [ "$#" -eq 0 ]; then
     echo "No arguments provided. Usage: 
     1. '-local' to build local environment
-    2. '-docker' to build and run docker container"
+    2. '-docker' to build and run docker container
+    3. '-test' to run linter, formatter and tests"
 elif [ $1 = "-local" ]; then
     echo "Running format, linter and tests"
     rm -rf .venv
@@ -13,8 +14,14 @@ elif [ $1 = "-local" ]; then
     pip install -r ./requirements.txt
 
     black plato
-    pylint plato
-    pytest plato
+    pylint --fail-under=10.0 plato
+    pytest -v plato
+elif [ $1 = "-test" ]; then
+    echo "Running format, linter and tests"
+    source .venv/bin/activate
+    black plato
+    pylint --fail-under=9.9 plato
+    pytest -v plato
 elif [ $1 = "-docker" ]; then
     echo "Building and running docker image"
     docker stop smarti-container
@@ -26,6 +33,7 @@ elif [ $1 = "-docker" ]; then
 else
   echo "Wrong argument is provided. Usage:
     1. '-local' to build local environment
-    2. '-docker' to build and run docker container"
+    2. '-docker' to build and run docker container
+    3. '-test' to run linter, formatter and tests"
 fi
 
