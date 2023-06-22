@@ -9,7 +9,11 @@ from flask import Flask
 app = Flask(__name__, static_url_path="/static")
 log = logging.getLogger("app")
 log.setLevel(logging.DEBUG)
-log.addHandler(logging.StreamHandler(sys.stdout))
+log.addHandler(logging.StreamHandler(sys.stdout
+
+@app.before_request
+def log_request_info():
+    app.logger.info('Request: %s %s %s', request.method, request.url, request.data)
 
 
 @app.route("/")
